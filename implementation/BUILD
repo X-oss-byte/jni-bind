@@ -257,6 +257,15 @@ cc_test(
 )
 
 cc_library(
+    name = "custom_corpus",
+    hdrs = ["custom_corpus.h"],
+    deps = [
+        ":corpus_tag",
+        "//:jni_dep",
+    ],
+)
+
+cc_library(
     name = "default_class_loader",
     hdrs = ["default_class_loader.h"],
     deps = [

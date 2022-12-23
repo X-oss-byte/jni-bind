@@ -51,9 +51,9 @@ struct Proxy;
 // CDecls for all declarable types (these index into proxy definitions).
 using AllKeys =
     Corpus_t<JniUserDefinedCorpusTag, void, jboolean, jbyte, jshort, jint,
-             jfloat, jlong, jchar, jdouble, jstring, jobject, jarray,
-             jobjectArray, jintArray, jbooleanArray, jbyteArray, jcharArray,
-             jshortArray, jdoubleArray, jfloatArray, jlongArray>;
+             jfloat, jlong, jchar, jdouble, jobject, jarray, jobjectArray,
+             jintArray, jbooleanArray, jbyteArray, jcharArray, jshortArray,
+             jdoubleArray, jfloatArray, jlongArray>;
 
 template <typename TUndecayed>
 struct ProxyHelper {
